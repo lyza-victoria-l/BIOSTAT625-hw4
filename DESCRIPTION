@@ -1,5 +1,5 @@
 Package: BIOSTAT625
-Title: What the Package Does (One Line, Title Case)
+Title: personYears: Create a person-years table
 Version: 0.0.0.9000
 Authors@R: 
     person("Lyza", "Lash", , "lyzalash@umich.edu", role = c("aut", "cre"))
