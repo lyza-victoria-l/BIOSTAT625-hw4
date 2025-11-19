@@ -9,7 +9,9 @@
 #' @param unit (string vector 1L) "year" by default. State the unit of time1, time2 with either c("year", "month", "week", "day"). This scales time1,time2 to years.
 #' @param timeCut (numeric vector) NULL by default. If desired, cuts elapsed time into intervals. Can be unique breakpoints or number of intervals. Creates a second table.
 #' @param rate (logical vector 1L) F by default. If = T, adds a new variable column displaying the rate n events per 1000 person years.
+#' @importFrom stats aggregate
 #' @return A list of one table by default. If !is.null(group), a list of two tables.
+
 
 personYears =
   function(time1, time2 = NULL,
