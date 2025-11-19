@@ -1,3 +1,16 @@
+#' personYears
+#'
+#' Create a simple person-years table.
+#'
+#' @param time1 (numeric vector) Times to follow-up by default. If time2 is stated, time1 is the start time.
+#' @param time2 (numeric vector) NULL by default. If stated, time2 is the end time.
+#' @param event (numeric vector) NULL by default. If stated, event indicates an event occured or did not occured.
+#' @param group (factor vector) NULL by default. If stated, group stratifies the dataset by length(unique(group)) stratas.
+#' @param unit (string vector 1L) "year" by default. State the unit of time1, time2 with either c("year", "month", "week", "day"). This scales time1,time2 to years.
+#' @param timeCut (numeric vector) NULL by default. If desired, cuts elapsed time into intervals. Can be unique breakpoints or number of intervals. Creates a second table.
+#' @param rate (logical vector 1L) F by default. If = T, adds a new variable column displaying the rate n events per 1000 person years.
+#' @return A list of one table by default. If !is.null(group), a list of two tables.
+
 personYears =
   function(time1, time2 = NULL,
            event = NULL, group = NULL,
@@ -89,6 +102,4 @@ personYears =
     }
 
     return(result)
-}
-
-
+  }
