@@ -9,4 +9,4 @@
 #'   \item{failure}{Indicator of machine failure}
 #' }
 #' @source Generated for package.
-"mydata"
+"machines"
